@@ -22,6 +22,8 @@ public class HungrySingleton {
 
 // 饿汉式（静态变量）
 class Singleton {
+
+
     // 构造器私有化
     private Singleton() {
 
@@ -32,4 +34,6 @@ class Singleton {
     public static Singleton getInstance() {
         return instance;
     }
+
+
 }
