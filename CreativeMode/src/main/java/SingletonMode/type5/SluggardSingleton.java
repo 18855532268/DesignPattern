@@ -1,4 +1,4 @@
-package singletonMode.type5;
+package SingletonMode.type5;
 
 /**
  * @author yaoby

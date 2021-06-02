@@ -1,11 +1,13 @@
-package singletonMode.type1;
+package SingletonMode.type2;
 
 /**
  * @author yaoby
  * @version 1.0
  * @date 2021/5/24 22:10
  *
- * 这种单例模式可能会造成内存的浪费
+ * 和静态变量的方式一样 优缺点也相同
+ * 只不过是将实例化过程放在了静态代码块中
+ * 也是在类加载的时候执行静态代码块种的方法 初始化类实例
  */
 public class HungrySingleton {
     public static void main(String[] args) {
@@ -20,20 +22,20 @@ public class HungrySingleton {
 
 }
 
-// 饿汉式（静态变量）
+// 饿汉式（静态代码块）
 class Singleton {
-
-
     // 构造器私有化
     private Singleton() {
 
     }
+    // 在静态代码块中创建对象
+    static {
+        instance = new Singleton();
+    }
     // 本类内部创建对象实例
-    private final static Singleton instance = new Singleton();
+    private final static Singleton instance;
 
     public static Singleton getInstance() {
         return instance;
     }
-
-
 }
