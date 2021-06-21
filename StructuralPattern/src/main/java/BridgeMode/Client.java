@@ -13,8 +13,16 @@ package BridgeMode;
  * 桥接模式其它应用场景
  *
  * 对于那些不希望使用继承或因为多层次继承导致系统类的个数急剧增加的系统，桥接模式尤为适用.
+ * 10.9	常见的应用场景:
+ * 1)	-JDBC 驱动程序
+ * 2)	-银行转账系统
+ * 转账分类: 网上转账，柜台转账，AMT 转账
+ * 转账用户类型：普通用户，银卡用户，金卡用户..
+ * 3)	-消息管理
+ * 消息类型：即时消息，延时消息
+ * 消息分类：手机短信，邮件消息，QQ 消息...
  */
-public class client {
+public class Client {
     public static void main(String[] args) {
         FoldedPhone phone = new FoldedPhone(new XiaoMi());
         phone.call();
