@@ -6,10 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="StructuralPattern" />
+        <module name="BehavioralPattern" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="BehavioralPattern" target="8" />
       <module name="CreationalMode" target="8" />
       <module name="DesignPattern" target="8" />
       <module name="FactoryMode" target="8" />
