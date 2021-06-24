@@ -7,6 +7,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/CreativeMode/pom.xml" />
         <option value="$PROJECT_DIR$/StructuralPattern/pom.xml" />
+        <option value="$PROJECT_DIR$/BehavioralPattern/pom.xml" />
+        <option value="$PROJECT_DIR$/CreationalPattern/pom.xml" />
       </list>
     </option>
   </component>
